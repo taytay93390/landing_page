@@ -1,83 +1,16 @@
-.roboto-thin {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
 }
 
+
+
+/* HEADER SECTION */
 .header {
     background-color: #1F2937;
     display: flex;
@@ -86,32 +19,8 @@ body {
 }
 
 .logo {
-    display: flex;
     font-size: 24px;
     color: #F9FAF8;
-}
-
-.hero {
-    background-color: #1F2937;
-}
-
-.hero-main {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
-}
-
-.hero-secondary {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.button-signup {
-    background-color: #3882F6;
-}
-
-.button-action {
-    background-color: #3882F6;
 }
 
 a {
@@ -126,19 +35,85 @@ ul {
     display: flex;
 }
 
-.footer {
+/* HERO SECTION */
+.hero {
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hero-main {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.button-signup {
+    background-color: #3882F6;
+    color:white;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 4px;
+}
+
+/* INFO SECTION */
 
 .info-header {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    align-self: center;
 }
 
+.container-info{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+/* QUOTE SECTION */
 .quote {
     background-color: #E5E7EB;
     font-size: 36px;
-    font-size: 'light italic';
+    font-family: 'light italic';
     color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* CALL TO ACTION SECTION */
+.signup {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3882F6;
+    color: white;
+}
+.button-action {
+    background-color: #3882F6;
+    color:white;
+    border-color: white;
+    font-family: Roboto, sans-serif;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
